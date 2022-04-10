@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ocho {
 
 	public static void main(String[] args) {
-
+		
 		// Introducir y mostrar los valores del array
 
 		int numbers[] = new int[10];
@@ -20,7 +20,6 @@ public class Ocho {
 
 	/**
 	 * Rellenar las posiciones del array con los valores introducidos por teclado
-	 * 
 	 * @param posicion
 	 * @return int
 	 */
@@ -32,9 +31,9 @@ public class Ocho {
 
 	}
 
+
 	/**
 	 * Mostrar por pantalla los valores del array
-	 * 
 	 * @param array
 	 */
 	public static void mostrar(int[] array) {
@@ -42,10 +41,9 @@ public class Ocho {
 		System.out.print("{");
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i]);
-			if (i < array.length - 1)
-				System.out.print(", ");
+			if(i< array.length-1) System.out.print(", ");
 		}
-		System.out.print("}");
+		System.out.println("}");
 	}
 
 }

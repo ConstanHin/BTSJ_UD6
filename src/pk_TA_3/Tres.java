@@ -17,6 +17,7 @@ public class Tres {
 		System.out.println("¿Es número primo?");
 		System.out.println("Introduce el numero:");
 		numeroCheck = scnr.nextInt();
+		scnr.close();
 		
 		if(isPrime(numeroCheck)) {
 			System.out.println("El número es primo.");
