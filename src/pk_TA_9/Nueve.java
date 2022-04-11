@@ -20,10 +20,7 @@ public class Nueve {
 		int numbers[] = new int[inputArraySize];
 
 		// Rellenar el array con numeros aleatorios entre 0 y 9
-		for (int i = 0; i < numbers.length; i++) {
-
-			numbers[i] = rellenar(0, 9);
-		}
+		rellenar(numbers, 0, 9);
 
 		mostrarArray(numbers);
 
@@ -34,11 +31,15 @@ public class Nueve {
 	 * 
 	 * @return Integer
 	 */
-	public static int rellenar(int min, int max) {
+	public static void rellenar(int[] numArray,int min, int max) {
 
-		int numeroAleatorio = generarNumeroAleatorio(min, max);
+		
+		for (int i = 0; i < numArray.length; i++) {
+			int numeroAleatorio = generarNumeroAleatorio(min, max);
 
-		return numeroAleatorio;
+			numArray[i] = numeroAleatorio;
+		}
+
 
 	}
 
