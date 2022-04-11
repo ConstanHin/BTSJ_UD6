@@ -25,13 +25,11 @@ public class Diez {
 	}
 
 	/**
-	 * Mostrar por pantalla los valores del array y la suma de los valores
+	 * Mostrar por pantalla los valores del array
 	 * 
 	 * @param array
 	 */
 	public static void mostrarArray(int[] array) {
-
-		int sumaValores = 0;
 
 		System.out.println("Los valores del array son: ");
 		System.out.print("{");
@@ -40,15 +38,9 @@ public class Diez {
 			System.out.print(array[i]);
 			if (i < array.length - 1)
 				System.out.print(", ");
-			// Sumar valores
-			sumaValores = sumaValores + array[i];
 
 		}
 		System.out.println("}");
-
-		// Mostrar suma valores
-		System.out.println("----------------------------");
-		System.out.println("La suma de los valores es: " + sumaValores);
 
 	}
 
